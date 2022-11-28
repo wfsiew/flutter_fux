@@ -237,96 +237,188 @@ class _MyHomePageState extends State<MyHomePage> {
                         ],
                       ),
                     ),
-                    const SizedBox(height: 30),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Stack(
-                          children: [
-                            Container(
-                              padding: const EdgeInsets.only(left: 20, right: 20, top: 40, bottom: 25),
-                              decoration: BoxDecoration(
-                                color: Colors.white,
-                                borderRadius: BorderRadius.circular(8),
-                              ),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: const [
-                                  Text(
-                                    'Brand Recognition',
-                                    style: TextStyle(
-                                      fontFamily: kFont,
-                                      fontSize: 18,
-                                      fontWeight: FontWeight.w700,
-                                      color: kPrimaryColor2,
+                    Padding(
+                      padding: const EdgeInsets.only(left: 120, right: 120, top: 60),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Expanded(
+                            child: Stack(
+                              children: [
+                                Container(
+                                  height: 230,
+                                  margin: const EdgeInsets.only(top: 40),
+                                  padding: const EdgeInsets.only(left: 20, right: 20, top: 40, bottom: 25),
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.circular(8),
+                                  ),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: const [
+                                      SizedBox(height: 25),
+                                      Text(
+                                        'Brand Recognition',
+                                        style: TextStyle(
+                                          fontFamily: kFont,
+                                          fontSize: 18,
+                                          fontWeight: FontWeight.w700,
+                                          color: kPrimaryColor2,
+                                        ),
+                                      ),
+                                      SizedBox(height: 10),
+                                      Text(
+                                        "Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instil confidence in your content.",
+                                        style: TextStyle(
+                                          fontFamily: kFont,
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.w500,
+                                          color: kNeutralColor2,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                Container(
+                                  margin: const EdgeInsets.only(left: 20),
+                                  padding: const EdgeInsets.all(20),
+                                  decoration: BoxDecoration(
+                                    color: kPrimaryColor2,
+                                    borderRadius: BorderRadius.circular(50),
+                                  ),
+                                  child: Image.asset(
+                                    'images/icon-brand-recognition.png',
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Container(
+                            width: 30,
+                            height: 8,
+                            margin: const EdgeInsets.only(top: 180),
+                            color: kPrimaryColor,
+                          ),
+                          Expanded(
+                            child: Padding(
+                              padding: const EdgeInsets.only(top: 40),
+                              child: Stack(
+                                children: [
+                                  Container(
+                                    height: 230,
+                                    margin: const EdgeInsets.only(top: 40),
+                                    padding: const EdgeInsets.only(left: 20, right: 20, top: 40, bottom: 25),
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      borderRadius: BorderRadius.circular(8),
+                                    ),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: const [
+                                        SizedBox(height: 25),
+                                        Text(
+                                          'Detailed Records',
+                                          style: TextStyle(
+                                            fontFamily: kFont,
+                                            fontSize: 18,
+                                            fontWeight: FontWeight.w700,
+                                            color: kPrimaryColor2,
+                                          ),
+                                        ),
+                                        SizedBox(height: 10),
+                                        Text(
+                                          "Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.",
+                                          style: TextStyle(
+                                            fontFamily: kFont,
+                                            fontSize: 12,
+                                            fontWeight: FontWeight.w500,
+                                            color: kNeutralColor2,
+                                          ),
+                                        ),
+                                      ],
                                     ),
                                   ),
-                                  SizedBox(height: 10),
-                                  Text(
-                                    "Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instil confidence in your content.",
-                                    style: TextStyle(
-                                      fontFamily: kFont,
-                                      fontSize: 12,
-                                      fontWeight: FontWeight.w500,
-                                      color: kNeutralColor2,
+                                  Container(
+                                    margin: const EdgeInsets.only(left: 20),
+                                    padding: const EdgeInsets.all(20),
+                                    decoration: BoxDecoration(
+                                      color: kPrimaryColor2,
+                                      borderRadius: BorderRadius.circular(50),
+                                    ),
+                                    child: Image.asset(
+                                      'images/icon-detailed-records.png',
+                                      fit: BoxFit.cover,
                                     ),
                                   ),
                                 ],
                               ),
                             ),
-                            /* Container(
-                              padding: const EdgeInsets.all(20),
-                              decoration: BoxDecoration(
-                                color: kPrimaryColor2,
-                                borderRadius: BorderRadius.circular(50),
-                              ),
-                              child: Image.asset(
-                                'images/icon-brand-recognition.png',
-                                fit: BoxFit.cover,
-                              ),
-                            ), */
-                          ],
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(top: 40),
-                          child: Stack(
-                            children: [
-                              Container(
-                                padding: const EdgeInsets.only(left: 20, right: 20, top: 40, bottom: 25),
-                                decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  borderRadius: BorderRadius.circular(8),
-                                ),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: const [
-                                    Text(
-                                      'Detailed Records',
-                                      style: TextStyle(
-                                        fontFamily: kFont,
-                                        fontSize: 18,
-                                        fontWeight: FontWeight.w700,
-                                        color: kPrimaryColor2,
-                                      ),
-                                    ),
-                                    SizedBox(height: 10),
-                                    Text(
-                                      "Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.",
-                                      style: TextStyle(
-                                        fontFamily: kFont,
-                                        fontSize: 12,
-                                        fontWeight: FontWeight.w500,
-                                        color: kNeutralColor2,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ],
                           ),
-                        ),
-                      ],
+                          Container(
+                            width: 30,
+                            height: 8,
+                            margin: const EdgeInsets.only(top: 180),
+                            color: kPrimaryColor,
+                          ),
+                          Expanded(
+                            child: Padding(
+                              padding: const EdgeInsets.only(top: 80),
+                              child: Stack(
+                                children: [
+                                  Container(
+                                    height: 230,
+                                    margin: const EdgeInsets.only(top: 40),
+                                    padding: const EdgeInsets.only(left: 20, right: 20, top: 40, bottom: 25),
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      borderRadius: BorderRadius.circular(8),
+                                    ),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: const [
+                                        SizedBox(height: 25),
+                                        Text(
+                                          'Fully Customizable',
+                                          style: TextStyle(
+                                            fontFamily: kFont,
+                                            fontSize: 18,
+                                            fontWeight: FontWeight.w700,
+                                            color: kPrimaryColor2,
+                                          ),
+                                        ),
+                                        SizedBox(height: 10),
+                                        Text(
+                                          "Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.",
+                                          style: TextStyle(
+                                            fontFamily: kFont,
+                                            fontSize: 12,
+                                            fontWeight: FontWeight.w500,
+                                            color: kNeutralColor2,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  Container(
+                                    margin: const EdgeInsets.only(left: 20),
+                                    padding: const EdgeInsets.all(20),
+                                    decoration: BoxDecoration(
+                                      color: kPrimaryColor2,
+                                      borderRadius: BorderRadius.circular(50),
+                                    ),
+                                    child: Image.asset(
+                                      'images/icon-fully-customizable.png',
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ],
                 ),
